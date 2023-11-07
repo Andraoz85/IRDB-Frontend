@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Movie Manager</h1>
+
+    <!-- Skapa ny film -->
+    <div id="createMovie">
+      <input type="text" id="newMovieTitle" placeholder="Title" />
+      <input type="number" id="newMovieYear" placeholder="Year" />
+      <input type="text" id="newMovieGenre" placeholder="Genre" />
+      <input
+        type="number"
+        step="0.1"
+        id="newMovieRating"
+        placeholder="Rating"
+      />
+      <input type="text" id="newMovieDirector" placeholder="Director" />
+      <input type="number" id="newMovieDuration" placeholder="Duration (min)" />
+      <button onclick="createMovie()">Add Movie</button>
+    </div>
+
+    <h2>Movie Database</h2>
+
+    <!-- Redigera befintlig film -->
+    <div id="updateMovie" style="display: none">
+      <input type="hidden" id="updateMovieId" />
+      <input type="text" id="updateMovieTitle" placeholder="Title" />
+      <input type="number" id="updateMovieYear" placeholder="Year" />
+      <input type="text" id="updateMovieGenre" placeholder="Genre" />
+      <input
+        type="number"
+        step="0.1"
+        id="updateMovieRating"
+        placeholder="Rating"
+      />
+      <input type="text" id="updateMovieDirector" placeholder="Director" />
+      <input
+        type="number"
+        id="updateMovieDuration"
+        placeholder="Duration (min)"
+      />
+      <button onclick="updateMovie()">Save Changes</button>
+    </div>
+
+    <div id="movieList"></div>
+
+    <!-- Detaljer för en vald film -->
+    <div id="movieDetails" style="display: none"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

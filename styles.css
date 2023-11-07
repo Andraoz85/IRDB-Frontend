@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#updateMovie,
+#createMovie {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.movie-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.movie-item h3 {
+    cursor: pointer;
+    color: #333;
+    margin: 0;
+}
+
+.movie-details {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: none;
+}
+
+.movie-item:hover {
+    background-color: #f0f0f0;
+}
